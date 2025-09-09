@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Add a vehicle</title>
+            <link rel="stylesheet" href="style.css">
+            <script src="addscript.js" type="module" defer></script>
+        </head>
+        <body>
+            <div id="container">
+                <header>
+                    <h1><strong>Add a Vehicle</strong></h1>
+                    <ul class="nav-links">
+                        <li><a href="peoplesearch.html">People search </a></li>
+                        <li><a href="vehiclesearch.html">Vehicle search</a></li>
+                        <li><a class="active" href="addavehicle.html">Add a vehicle </a></li>
+                    </ul>
+                </header>
+
+                <main>
+                    <form>
+                        <label for="owner">Enter owner name:</label>
+                        <input id="owner" name="owner">
+                        <button type="button" id="checkButton" name="checkButton" disabled>Check owner</button><br>
+                    </form>
+                    <div id = "results">
+                        <div id="owner-results"></div>
+                        <button id="newOwnerButton" style="display: none;">New owner</button>
+                    </div>
+                    <div id="message-owner"></div>
+                    <form action="addavehicle.html" method="post">
+                        <label for="rego">Enter vehicle registration:</label>
+                        <input id="rego" name="rego"><br>
+                        <label for="make" >Enter make:</label>
+                        <input id="make" name="make"><br>
+                        <label for="model">Enter model:</label>
+                        <input id="model" name="model"><br>
+                        <label for="colour">Enter colour:</label>
+                        <input id="colour" name="colour"><br>
+                        <button type="button" id="addVehicle">Add vehicle</button>
+                    </form>
+                    <div id="message-vehicle"></div>
+                </main>
+
+                <aside>
+                    <img alt="sidebar image" src="https://thumbs.dreamstime.com/b/car-icon-add-sign-new-plus-positive-symbol-vector-111940793.jpg">
+                </aside>
+                <footer></footer>
+            </div>
+        </body>
+    </html>

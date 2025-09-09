@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Vehicle Search</title>
+            <link rel="stylesheet" href="style.css">
+            <script src="vehiclescript.js" type="module" defer></script>
+        </head>
+        <body>
+            <div id="container">
+                <header>
+                    <h1><strong>Vehicle Search</strong></h1>
+                    <ul class="nav-links">
+                        <li><a href="peoplesearch.html">People search </a></li>
+                        <li><a class= "active" href="vehiclesearch.html">Vehicle search</a></li>
+                        <li><a href="addavehicle.html">Add a vehicle </a></li>
+                    </ul>
+                </header>
+
+                <main>
+                    <form action="vehiclesearch.html" method="post">
+                        <label for="rego">Search by vehicle registration/plate number</label>
+                        <input type="text" id="rego" name="rego"><br>
+                        <button id="submitButton" type="button">Submit</button>
+                    </form>
+                    <div id="message"></div>
+                    <div id="results"></div>
+                </main>
+
+                <aside>
+                    <img alt="sidebar image" src="https://hips.hearstapps.com/hmg-prod/images/2-spectre-unveiled-the-first-fully-electric-rolls-royce-front-3-4-1666037303.jpg?crop=0.845xw:1.00xh;0.0714xw,0&resize=980:*">
+                </aside>
+                
+                <footer></footer>
+            </div>
+        </body>
+    </html>

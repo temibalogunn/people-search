@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" >
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>People Search</title>
+            <link rel="stylesheet" href="style.css">
+            <script src="peoplescript.js" type="module" defer></script>
+        </head>
+        <body>
+            <div id="container">
+                <header>
+                    <h1><strong>People Search</strong></h1>
+                    <ul class="nav-links">
+                        <li><a class="active" href="peoplesearch.html">People search </a></li>
+                        <li><a href="vehiclesearch.html">Vehicle search</a></li>
+                        <li><a href="addavehicle.html">Add a vehicle </a></li>
+                    </ul>
+                </header>
+
+                <main>
+                    <form action="peoplesearch.html" method="post">
+                        <label for="name">Search by driver name</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="license">Search by driving license number</label>
+                        <input type="text" id="license" name="license"><br>
+                        <button id="submitButton" type="button">Submit</button>
+                    </form>
+                    <div id="message"></div>
+                    <div id="results"></div>
+                </main>
+
+                <aside>
+                    <img alt="sidebar image" src="https://mentorship.originlabsoft.com/uploads/medium/38f41af6dba918ede2458697c7727c0b_medium-600x600.jpg">
+                </aside>
+
+                <footer>
+
+                </footer>
+            </div>
+            
+        </body>
+    </html>
